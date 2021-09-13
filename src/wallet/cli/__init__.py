@@ -33,7 +33,8 @@ def cli(ctx, debug: bool = False) -> None:
     ctx.obj["logger"] = structlog.get_logger(app_name=distribution.project_name, version=distribution.version)
 
 
-def main() -> None:
-    cli.add_command(accounts, name="accounts")
+cli.add_command(accounts, name="accounts")
 
+
+def main() -> None:
     cli(obj={})

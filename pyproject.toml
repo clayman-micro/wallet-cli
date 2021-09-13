@@ -17,8 +17,9 @@ click = "^8.0.1"
 config = {git = "https://github.com/clayman083/config.git", rev = "v0.3.0"}
 python = "^3.9"
 structlog = "^21.1.0"
-requests = "^2.26.0"
 rich = "^10.9.0"
+pydantic = "^1.8.2"
+aiohttp = "^3.7.4"
 
 [tool.poetry.dev-dependencies]
 black = "19.10b0"
@@ -32,6 +33,7 @@ flake8-print = "4.0.0"
 ipython = "7.25.0"
 mypy = "0.910"
 pytest = "6.2.4"
+pytest-aiohttp = "^0.3.0"
 pytest-cov = "2.12.1"
 pytest-faker = "2.0.0"
 pytest-flake8 = "1.0.7"
@@ -40,6 +42,7 @@ pytest-mypy = "0.8.0"
 pytest-xdist = {extras = ["psutil"], version = "2.3.0"}
 rope = "0.19.0"
 types-click = "7.1.2"
+types-setuptools = "^57.0.2"
 
 [tool.poetry.scripts]
 wallet = 'wallet.cli:main'

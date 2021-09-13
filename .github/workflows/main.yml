@@ -29,7 +29,6 @@ jobs:
         env:
           TOXENV: mypy
         run: tox
-        continue-on-error: true
 
       - name: Send notification to Telegram
         if: always()

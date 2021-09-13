@@ -28,7 +28,6 @@ jobs:
         env:
           TOXENV: mypy
         run: tox
-        continue-on-error: true
 
   tests:
     runs-on: ubuntu-latest
